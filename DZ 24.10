@@ -1,0 +1,53 @@
+// Prvi zadatak
+var ime = prompt("Unesite vaše ime:");
+var prezime = prompt("Unesite vaše prezime:");
+var grad = prompt("Unesite vaše grad:");
+var adresa = prompt("Unesite vaše adresu:");
+var telefon = prompt("Unesite vaše broj telefona:");
+var pitanje = parseInt(prompt("Koliko imate omiljenih filmova"));
+
+var uneseno = {ime:"",prezime:"",grad:"",adresa:"",telefon:"",lista:[]};
+
+var i=0;
+
+while(i<pitanje){
+var lista = prompt("Unesite vaše listu omiljenih filmova :");
+uneseno.lista[i]=lista;
+i++
+}
+
+uneseno.ime=ime;
+uneseno.prezime=prezime;
+uneseno.grad=grad;
+uneseno.adresa=adresa;
+uneseno.telefon=telefon;
+console.log(uneseno);
+
+// Drugi zadatak 
+
+
+var pitanje = parseInt(prompt("Koliko ce te brojeva sabirati ?"));
+
+var objekat = {niz:[],metoda:function (a, b) {
+  return a + b;
+ }
+};
+
+for(let i=0; i<pitanje;i++){
+objekat.niz[i] = parseInt(prompt("Unesite brojeve:"));
+}
+console.log(objekat.niz.reduce(objekat.metoda));
+
+//Treci zadatak
+
+
+var pitanje = parseInt(prompt("Koliko ce Obj, imat properitija ?"));
+var objekat = {};
+
+for(let i=0;i<pitanje;i++){
+var unos = prompt("Unesite naziv propertija");
+var unos1 = prompt("Unesite vrjednost koju ce drzati properti:");
+objekat[unos] = unos1;
+}
+
+console.log(objekat);
