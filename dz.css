@@ -1,0 +1,77 @@
+.navbar{
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  transition-duration: 2s;
+  }
+.navbar:hover{
+    background-color: rgba(0, 0, 0, 0.1) !important;
+
+}
+.navbar-brand{
+  font-family: fantasy;
+  font-size: 25px;
+}
+.carousel-inner{
+  width: 80% !important;
+  margin-left: 10%;
+}
+.carousel-item,h5,p{
+
+ font-family: fantasy;
+
+}
+h1{
+  margin-top:25% !important;
+  margin-left:35%;
+  margin-right: 40%;
+  font-size: 60px;
+}
+h2{
+  margin-top:10% !important;
+  margin-left:35%;
+  margin-right: 40%;
+  font-size: 50px;
+}
+body {
+  background: linear-gradient(309deg, blue, grey, lightblue,lightgrey);
+  background-size: 800% 800%;
+  -webkit-animation: GradientAnimation 47s ease infinite;
+  -moz-animation: GradientAnimation 47s ease infinite;
+  animation: GradientAnimation 47s ease infinite;
+  height: 100vh;
+  width: 100%;
+  overflow: none;
+  position: relative;
+}
+
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 46%;
+  }
+  50% {
+    background-position: 100% 55%;
+  }
+  100% {
+    background-position: 0% 46%;
+  }
+}
+.color{
+  color: orange;
+}
+.carousel-caption{
+  font-size: 40px !important;
+}
+.carousel-inner{
+  border-radius: 20px;
+}
+.card{
+  margin-top: 14% !important;
+  margin: 20px;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+
+}
+.card:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 2s;
+}
